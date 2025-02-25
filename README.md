@@ -17,4 +17,12 @@ En este repositorio mejoraremos el código inicial, buscando mejorar el reporte 
 - **José Pedro Valenzuela López** → Diseñador del GitHub y manager
 - **Emiliano Becerra López** → 
 - **Pedro Daniel Gutiérrez Pérez** → 
-- **Natalia Vanessa Rodríguez Cervantes** → Diagrama de flujo y lista de asistencias / ausencias.
+- **Natalia Vanessa Rodríguez Cervantes** →
+- **Luna Silva Valeria Carolina** →
+- **Torres Bermúdez Ángel Antonio** →
+- **Martin Gallardo Edna Naomi** →
+- **Torres Rodrigues Samanta Julieth** →
+- **Correa Rodrigues Erika Janeth** →
+- **Ávila Núñez Jacob** →
+- **Gil Martínez Carlos Alberto** →
+- **Martínez Castro Quehat Merari Uziel** →
