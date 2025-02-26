@@ -1,5 +1,5 @@
 #Estas son las listas.
-nameList = ["EMILIANO", "ALLISON", "NAOMI", "NATALIA", "PEDRO", "JOSE", "DIEGO", "ABRIL", "GRECIA", "MISAEL", "ALBERTO", "ELIAS", "ANGEL","GLORIA"]
+nameList = ["EMILIANO", "ALLISON", "NAOMI", "NATALIA", "PEDRO", "JOSE", "DIEGO", "ABRIL", "GRECIA", "MISAEL", "ALBERTO", "ELIAS", "ANGEL", "GLORIA"]
 surList = ["BECERRA", "FACIO", "JIMENEZ", "RODRIGUEZ", "GUTIERREZ", "VALENZUELA", "VIDRIO", "MORA", "VALDIVIA", "IBARRA", "ORNELAS", "ZEPEDA", "GRANADOS", "ALVAREZ"]
 codeList = ["224164515", "219439208", "220520973", "221925365", "221453145", "221568619", "224164513", "221964573", "216548448", "224164491", " 218466716", "220571586", " 218220776", "221851264"]
 pList = [80, 90, 90, 70, 50, 100, 85, 95, 77, 98, 50, 65, 79, 100] #Programación
@@ -9,7 +9,7 @@ cList = [90, 70, 95, 73, 90, 100, 55, 69, 100, 100, 84, 89, 88, 90] #CB
 asisList = [15, 36, 40, 33, 19, 5, 10, 34, 18, 20, 23, 26, 38, 39] #Asistencia
 absList = [25, 4, 0, 7, 21, 35, 30, 6, 22, 20, 17, 14, 2, 1] #Faltas
 ageList = [19, 20, 22, 18, 18, 18, 19, 18, 24, 18, 21, 19, 22, 18] #Edad
-carList = ["LTB", "LTB", "LTB","LTB","LTB","LTB","LTB","LTB","LTB","LTB","LTB","LTB","LTB","LTB",] #Carrera
+carList = ["LTB", "LTB", "LTB", "LTB", "LTB", "LTB", "LTB", "LTB", "LTB", "LTB", "LTB", "LTB", "LTB", "LTB"] #Carrera
 
 Listade = ["LC", "LCD", "LIACD", "LIFN", "LTB"]
     
