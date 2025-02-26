@@ -1,3 +1,4 @@
+
 #Estas son las listas.
 nameList = ["EMILIANO", "ALLISON", "NAOMI", "NATALIA", "PEDRO", "JOSE", "DIEGO", "ABRIL", "GRECIA", "MISAEL", "ALBERTO", "ELIAS", "ANGEL", "GLORIA"]
 surList = ["BECERRA", "FACIO", "JIMENEZ", "RODRIGUEZ", "GUTIERREZ", "VALENZUELA", "VIDRIO", "MORA", "VALDIVIA", "IBARRA", "ORNELAS", "ZEPEDA", "GRANADOS", "ALVAREZ"]
@@ -272,6 +273,9 @@ while True:
                         else:
                             print ("Elija una carrera valida")
 
+                else: #Ya si deplano no, no se encuentra en la lista
+                    print("El estudiante no se encuentra en la lista")
+
         #Lista de estudiantes 5
             elif opcion == 5:
                 nombre_completo = [f"{nombre} {apellido}" for nombre, apellido in zip(nameList, surList)] #nombre_completo es una lista anidada que muestra en paralelo.
@@ -464,6 +468,9 @@ while True:
                         print("El estudiante ha reprobado por faltas")
                     else:
                         print("El estudiante sigue en el curso")
+
+                else: #Ya si deplano no, no se encuentra en la lista
+                    print("El estudiante no se encuentra en la lista")
 
         #Cerrar
             elif opcion == 11:
