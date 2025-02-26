@@ -204,14 +204,8 @@ while True:
                     nameList[mod] = nombre #Lo que hace esto es que va a guardar todo en la posición que sigue, esa es la función de .append
                     apellido = validar_input("Ingrese su nuevo apellido: ", tipo="alfabetico")
                     surList[mod] = apellido 
-                    while True:
-                        c = input("Ingrese su código: ")
-                        while len(c) != 9 or (not c.isdigit()):
-                            print ("Ingrese un código de 9 dígitos")
-                            c = input("Ingrese su código: ")
-                        else:
-                            codeList[mod] = c
-                            break
+                    codigo = validar_input("Ingresa el nuevo código: ", tipo="numerostr")
+                    codeList [mod] = codigo
                     edad = validar_input("Ingrese su edad: ", tipo= "numerico")
                     ageList[mod] = edad
                     
@@ -230,23 +224,17 @@ while True:
                     nameList[mod] = nombre #Lo que hace esto es que va a guardar todo en la posición que sigue, esa es la función de .append
                     apellido = validar_input("Ingrese su apellido: ", tipo="alfabetico")
                     surList[mod] = apellido 
-                    while True:
-                        c = input("Ingrese su código: ")
-                        while len(c) != 9 or (not c.isdigit()):
-                            print ("Ingrese un código de 9 dígitos")
-                            c = input("Ingrese su código: ")
-                        else:
-                            codeList[mod] = c
-                            break
-                        edad = validar_input("Ingrese su edad: ", tipo= "numerico")
-                        ageList[mod] = edad
-                    while True:
-                        carrera = validar_input("Ingrese su carrera (LC, LCD, LIACD, LIFN, LTB): ", tipo= "alfabetico")
-                        if carrera in Listade:
-                            carList[mod] = carrera
-                            break
-                        else:
-                            print ("Elija una carrera valida")
+                    codigo = validar_input("Ingresa el nuevo código: ", tipo="numerostr")
+                    codeList [mod] = codigo
+                    edad = validar_input("Ingrese su edad: ", tipo= "numerico")
+                    ageList[mod] = edad
+                        while True:
+                            carrera = validar_input("Ingrese su carrera (LC, LCD, LIACD, LIFN, LTB): ", tipo= "alfabetico")
+                            if carrera in Listade:
+                                carList[mod] = carrera
+                                break
+                            else:
+                                print ("Elija una carrera valida")
 
                 elif ident in codeList:
                     mod=codeList.index(ident)
@@ -255,16 +243,11 @@ while True:
                     nameList[mod] = nombre #Lo que hace esto es que va a guardar todo en la posición que sigue, esa es la función de .append
                     apellido = validar_input("Ingrese su apellido: ", tipo="alfabetico")
                     surList[mod] = apellido 
-                    while True:
-                        c = input("Ingrese su código: ")
-                        while len(c) != 9 or (not c.isdigit()):
-                            print ("Ingrese un código de 9 dígitos")
-                            c = input("Ingrese su código: ")
-                        else:
-                            codeList[mod] = c
-                            break
-                        edad = validar_input("Ingrese su edad: ", tipo= "numerico")
-                        ageList[mod] = edad
+                    codigo = validar_input("Ingresa el nuevo código: ", tipo="numerostr")
+                    codeList [mod] = codigo
+                    edad = validar_input("Ingrese su edad: ", tipo= "numerico")
+                    ageList[mod] = edad
+                    
                     while True:
                         carrera = validar_input("Ingrese su carrera (LC, LCD, LIACD, LIFN, LTB): ", tipo= "alfabetico")
                         if carrera in Listade:
