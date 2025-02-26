@@ -1,4 +1,5 @@
 
+
 #Estas son las listas.
 nameList = ["EMILIANO", "ALLISON", "NAOMI", "NATALIA", "PEDRO", "JOSE", "DIEGO", "ABRIL", "GRECIA", "MISAEL", "ALBERTO", "ELIAS", "ANGEL", "GLORIA"]
 surList = ["BECERRA", "FACIO", "JIMENEZ", "RODRIGUEZ", "GUTIERREZ", "VALENZUELA", "VIDRIO", "MORA", "VALDIVIA", "IBARRA", "ORNELAS", "ZEPEDA", "GRANADOS", "ALVAREZ"]
@@ -29,6 +30,11 @@ def validar_input(mensaje, tipo="alfabetico", rango=None):
                 return valor
             except ValueError:
                 print("La entrada debe ser un número.")
+        elif tipo == "numerostr":
+            if valor.isnumeric():
+                return valor
+            else:
+                print("La entrada debe contener solo números.")
         elif tipo == "rango":
             try:
                 valor = float(valor)
@@ -74,14 +80,10 @@ while True:
                 nameList.append(nombre) #Lo que hace esto es que va a guardar todo en la posición que sigue, esa es la función de .append
                 apellido = validar_input("Ingrese su apellido: ", tipo="alfabetico")
                 surList.append(apellido) 
-                while True:
-                    c = input("Ingrese su código: ")
-                    while len(c) != 9 or (not c.isdigit()):
-                        print ("Ingrese un código de 9 dígitos")
-                        c = input("Ingrese su código: ")
-                    else:
-                        codeList.append(c)
-                        break
+                codigo = validar_input("Ingresa su codigo: ", tipo = "numerostr")
+                codeList.append(codigo)
+                edad = validar_input ("Ingresar edad: ", tipo="numerico")
+                ageList.append(edad)
                 while True:
                     carrera = validar_input("Ingrese su carrera (LC, LCD, LIACD, LIFN, LTB): ", tipo= "alfabetico")
                     if carrera in Listade:
@@ -105,6 +107,7 @@ while True:
                             asisList.append(asistencias)
                             absList.append(inasistencias)
                             if inasistencias >6:
+                                print ("No tienes derecho a ordinario.")
                                 break
                             else:
                                 break
@@ -228,12 +231,12 @@ while True:
                     codeList [mod] = codigo
                     edad = validar_input("Ingrese su edad: ", tipo= "numerico")
                     ageList[mod] = edad
-                        while True:
-                            carrera = validar_input("Ingrese su carrera (LC, LCD, LIACD, LIFN, LTB): ", tipo= "alfabetico")
-                            if carrera in Listade:
-                                carList[mod] = carrera
-                                break
-                            else:
+                    while True:
+                        carrera = validar_input("Ingrese su carrera (LC, LCD, LIACD, LIFN, LTB): ", tipo= "alfabetico")
+                        if carrera in Listade:
+                            carList[mod] = carrera
+                            break
+                        else:
                                 print ("Elija una carrera valida")
 
                 elif ident in codeList:
@@ -261,8 +264,8 @@ while True:
 
         #Lista de estudiantes 5
             elif opcion == 5:
-                nombre_completo = [f"{nombre} {apellido}" for nombre, apellido in zip(nameList, surList)] #nombre_completo es una lista anidada que muestra en paralelo.
-                print(nombre_completo)
+                for nombre, apellido, codigo in zip(nameList, surList, codeList):
+                    print(f"Nombre: {nombre} {apellido}, Código: {codigo}")
                 
         #Almacenar calificaciones 6
             elif opcion == 6:
