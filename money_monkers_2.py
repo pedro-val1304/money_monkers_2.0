@@ -74,14 +74,13 @@ while True:
                 apellido = validar_input("Ingrese su apellido: ", tipo="alfabetico")
                 surList.append(apellido) 
                 while True:
-                    codigo = validar_input("Ingrese su código: ", tipo="numerico")
-                    if codigo <= 999999999 and codigo >= 100000000:
-                        codeList.append(codigo)
-                        break
-                    else:
+                    c = input("Ingrese su código: ")
+                    while len(c) != 9 or (not c.isdigit()):
                         print ("Ingrese un código de 9 dígitos")
-                edad = validar_input("Ingrese su edad: ", tipo= "numerico")
-                ageList.append (edad)
+                        c = input("Ingrese su código: ")
+                    else:
+                        codeList.append(c)
+                        break
                 while True:
                     carrera = validar_input("Ingrese su carrera (LTBI, LCD, LDIA, LCS, LIF): ", tipo= "alfabetico")
                     if carrera in Listade:
@@ -205,14 +204,16 @@ while True:
                     apellido = validar_input("Ingrese su nuevo apellido: ", tipo="alfabetico")
                     surList[mod] = apellido 
                     while True:
-                        codigo = validar_input("Ingrese su nuevo código: ", tipo="numerico")
-                        if codigo <= 999999999 and codigo >= 100000000:
-                            codeList[mod] = codigo
-                            break
-                        else:
+                        c = input("Ingrese su código: ")
+                        while len(c) != 9 or (not c.isdigit()):
                             print ("Ingrese un código de 9 dígitos")
+                            c = input("Ingrese su código: ")
+                        else:
+                            codeList[mod] = c
+                            break
                     edad = validar_input("Ingrese su edad: ", tipo= "numerico")
                     ageList[mod] = edad
+                    
                     while True:
                         carrera = validar_input("Ingrese su nueva carrera (LTBI, LCD, LDIA, LCS, LIF): ", tipo= "alfabetico")
                         if carrera in Listade:
@@ -229,14 +230,15 @@ while True:
                     apellido = validar_input("Ingrese su apellido: ", tipo="alfabetico")
                     surList[mod] = apellido 
                     while True:
-                        codigo = validar_input("Ingrese su código: ", tipo="numerico")
-                        if codigo <= 999999999 and codigo >= 100000000:
-                            codeList[mod] = codigo
-                            break
-                        else:
+                        c = input("Ingrese su código: ")
+                        while len(c) != 9 or (not c.isdigit()):
                             print ("Ingrese un código de 9 dígitos")
-                    edad = validar_input("Ingrese su edad: ", tipo= "numerico")
-                    ageList[mod] = edad
+                            c = input("Ingrese su código: ")
+                        else:
+                            codeList[mod] = c
+                            break
+                        edad = validar_input("Ingrese su edad: ", tipo= "numerico")
+                        ageList[mod] = edad
                     while True:
                         carrera = validar_input("Ingrese su carrera (LTBI, LCD, LDIA, LCS, LIF): ", tipo= "alfabetico")
                         if carrera in Listade:
@@ -253,14 +255,15 @@ while True:
                     apellido = validar_input("Ingrese su apellido: ", tipo="alfabetico")
                     surList[mod] = apellido 
                     while True:
-                        codigo = validar_input("Ingrese su código: ", tipo="numerico")
-                        if codigo <= 999999999 and codigo >= 100000000:
-                            codeList[mod] = codigo
-                            break
-                        else:
+                        c = input("Ingrese su código: ")
+                        while len(c) != 9 or (not c.isdigit()):
                             print ("Ingrese un código de 9 dígitos")
-                    edad = validar_input("Ingrese su edad: ", tipo= "numerico")
-                    ageList[mod] = edad
+                            c = input("Ingrese su código: ")
+                        else:
+                            codeList[mod] = c
+                            break
+                        edad = validar_input("Ingrese su edad: ", tipo= "numerico")
+                        ageList[mod] = edad
                     while True:
                         carrera = validar_input("Ingrese su carrera (LTBI, LCD, LDIA, LCS, LIF): ", tipo= "alfabetico")
                         if carrera in Listade:
