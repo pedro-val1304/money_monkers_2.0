@@ -14,10 +14,10 @@ En este repositorio mejoraremos el código inicial, buscando mejorar el reporte 
 > Favor de anotar su nombre y lo que estén realizando en el momento, para que no puedan trabajar.
 
 ## Integrantes del equipo y su rol
-- **José Pedro Valenzuela López** → Diseñador del GitHub y manager
-- **Emiliano Becerra López** → 
-- **Pedro Daniel Gutiérrez Pérez** → 
-- **Natalia Vanessa Rodríguez Cervantes** →
+- **José Pedro Valenzuela López** → Diseñador del GitHub y manager, líder del grupo de cambio en la lista.
+- **Emiliano Becerra López** → Consultor, líder de estandarización de datos.
+- **Pedro Daniel Gutiérrez Pérez** → Consultor, líder de poner límites a datos.
+- **Natalia Vanessa Rodríguez Cervantes** → Líder en el grupo de diagrama.
 - **Luna Silva Valeria Carolina** → 
 - **Torres Bermúdez Ángel Antonio** →
 - **Martin Gallardo Edna Naomi** →
