@@ -11,7 +11,7 @@ absList = [25, 4, 0, 7, 21, 35, 30, 6, 22, 20, 17, 14, 2, 1] #Faltas
 ageList = [19, 20, 22, 18, 18, 18, 19, 18, 24, 18, 21, 19, 22, 18] #Edad
 carList = ["LTB", "LTB", "LTB","LTB","LTB","LTB","LTB","LTB","LTB","LTB","LTB","LTB","LTB","LTB",] #Carrera
 
-Listade = ["LTB", "LCD", "LC", "LIACD", "LIFN"]
+Listade = ["LC", "LCD", "LIACD", "LIFN", "LTB"]
     
 #Definiendo función para checar
 def validar_input(mensaje, tipo="alfabetico", rango=None):
@@ -82,7 +82,7 @@ while True:
                         codeList.append(c)
                         break
                 while True:
-                    carrera = validar_input("Ingrese su carrera (LTB, LCD, LC, LIACD, LIFN): ", tipo= "alfabetico")
+                    carrera = validar_input("Ingrese su carrera (LC, LCD, LIACD, LIFN, LTB): ", tipo= "alfabetico")
                     if carrera in Listade:
                         carList.append(carrera)
                         break
@@ -215,7 +215,7 @@ while True:
                     ageList[mod] = edad
                     
                     while True:
-                        carrera = validar_input("Ingrese su nueva carrera (LTB, LCD, LC, LIACD, LIFN): ", tipo= "alfabetico")
+                        carrera = validar_input("Ingrese su nueva carrera (LC, LCD, LIACD, LIFN, LTB): ", tipo= "alfabetico")
                         if carrera in Listade:
                             carList[mod] = carrera
                             break
@@ -240,7 +240,7 @@ while True:
                         edad = validar_input("Ingrese su edad: ", tipo= "numerico")
                         ageList[mod] = edad
                     while True:
-                        carrera = validar_input("Ingrese su carrera (LTB, LCD, LC, LIACD, LIFN): ", tipo= "alfabetico")
+                        carrera = validar_input("Ingrese su carrera (LC, LCD, LIACD, LIFN, LTB): ", tipo= "alfabetico")
                         if carrera in Listade:
                             carList[mod] = carrera
                             break
@@ -265,7 +265,7 @@ while True:
                         edad = validar_input("Ingrese su edad: ", tipo= "numerico")
                         ageList[mod] = edad
                     while True:
-                        carrera = validar_input("Ingrese su carrera (LTB, LCD, LC, LIACD, LIFN): ", tipo= "alfabetico")
+                        carrera = validar_input("Ingrese su carrera (LC, LCD, LIACD, LIFN, LTB): ", tipo= "alfabetico")
                         if carrera in Listade:
                             carList[mod] = carrera
                             break
