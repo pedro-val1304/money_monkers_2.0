@@ -18,7 +18,7 @@ En este repositorio mejoraremos el código inicial, buscando mejorar el reporte 
 - **Emiliano Becerra López** → 
 - **Pedro Daniel Gutiérrez Pérez** → 
 - **Natalia Vanessa Rodríguez Cervantes** →
-- **Luna Silva Valeria Carolina** → Rango de validaciones (0-100)
+- **Luna Silva Valeria Carolina** → 
 - **Torres Bermúdez Ángel Antonio** →
 - **Martin Gallardo Edna Naomi** →
 - **Torres Rodrigues Samanta Julieth** →
