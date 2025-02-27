@@ -191,20 +191,29 @@ while True:
 
         #Modificar 4
             elif opcion == 4:
-                ident = input("Ingresa el identificador: ").upper()
+                ident = input("Ingrese el identificador: ").upper()
+                
                 if ident in nameList: #Funciona igual en todos los programas
                     mod=nameList.index(ident)
-                    nameList[mod]=input(str("Ingrese nuevo nombre: ").upper()) #Va a modificar todo lo de la posicón en la que esta el ident. Mod es una variable que se iguala a la posición en la
-                    surList[mod]=input(str("Ingrese nuevo apellido: ").upper()) #que se encuentra el ident. Es decir, si el input esta en la posición 2, se van a modificar todas las listas
-                    codeList[mod]=input(str("Ingrese nuevo código: ")) #en la posición 2. Se va a modificar la carrera de la posición 2, el nombre de la posición 2 y todas las listas de la posición 2
-                    ageList[mod]=input(int("Ingrese su nueva edad: "))
-                    carList[mod]=input(str("Ingrese su nueva carrera: ").upper())
-                    pList[mod]=float(input("Ingrese nueva calificación de Programación 1 (0 - 100):  "))
-                    fList[mod]=float(input("Ingrese nueva calificación de Física (0 - 100): "))
-                    qList[mod]=float(input("Ingrese nueva calificación de Química (0 - 100): "))
-                    cList[mod]=float(input("Ingrese nueva calificación de Biología (0 - 100): "))
-                    asisList[mod]=int(input("Ingrese nuevas asistencias: "))
-                    absList[mod]=int(input("Ingrese nuevas faltas: "))
+                    print("Modificando información del estudiante:", nameList[mod], surList[mod])
+                    nombre = validar_input("Ingrese su nuevo nombre: ", tipo="alfabetico")
+                    nameList[mod] = nombre #Lo que hace esto es que va a guardar todo en la posición que sigue, esa es la función de .append
+                    apellido = validar_input("Ingrese su nuevo apellido: ", tipo="alfabetico")
+                    surList[mod] = apellido 
+                    codigo = validar_input("Ingresa el nuevo código: ", tipo="numerostr")
+                    codeList [mod] = codigo
+                    edad = validar_input("Ingrese su edad: ", tipo= "numerico")
+                    ageList[mod] = edad
+                    
+                    while True:
+                        carrera = validar_input("Ingrese su nueva carrera (LC, LCD, LIACD, LIFN, LTB): ", tipo= "alfabetico")
+                        if carrera in Listade:
+                            carList[mod] = carrera
+                            break
+                        else:
+                            print ("Elija una carrera valida")
+
+
                 elif ident in surList:
                     mod=surList.index(ident)
                     print("Modificando información del estudiante:", nameList[mod], surList[mod])
