@@ -74,17 +74,45 @@ while True:
 
         #Agregar nuevo 1
             if opcion == 1:
-                nameList.append(str(input("Ingrese su nombre: ")).upper()) #Lo que hace esto es que va a guardar todo en la posición que sigue, esa es la función de .append
-                surList.append(str(input("Ingrese su apellido: ")).upper()) # .upper hace que el valor sin importar como lo escriban se registre en mayúsculas nomas.
-                codeList.append(str(input("Ingrese su código: ")))
-                ageList.append(str(input("Ingrese su edad: ")))
-                carList.append(str(input("Ingrese su carrera (LTBI, LCD, LDIA, LCS, LIF): ")).upper())
-                pList.append(float(input("Ingrese su calificación de Programación 1 (0 - 100): ")))
-                fList.append(float(input("Ingrese su calificación de Física (0 - 100): ")))
-                qList.append(float(input("Ingrese su calificación de Química (0 - 100): ")))
-                cList.append(float(input("Ingrese su calificación de Ciencias Biológicas (0 - 100): ")))
-                asisList.append(int(input("Ingrese las asistencias del estudiante (0 - 100): ")))
-                absList.append(int(input("Ingrese las faltas del estudiante: ")))
+                nombre = validar_input("Ingrese su nombre: ", tipo="alfabetico")
+                nameList.append(nombre) #Lo que hace esto es que va a guardar todo en la posición que sigue, esa es la función de .append
+                apellido = validar_input("Ingrese su apellido: ", tipo="alfabetico")
+                surList.append(apellido) 
+                codigo = validar_input("Ingresa su codigo: ", tipo = "numerostr")
+                codeList.append(codigo)
+                edad = validar_input ("Ingresar edad: ", tipo="numerico")
+                ageList.append(edad)
+                while True:
+                    carrera = validar_input("Ingrese su carrera (LC, LCD, LIACD, LIFN, LTB): ", tipo= "alfabetico")
+                    if carrera in Listade:
+                        carList.append(carrera)
+                        break
+                    else:
+                        print ("Elija una carrera valida")
+                programacion1 = validar_input("Ingrese su calificación de Programación 1 (0 - 100): ", tipo= "rango", rango = (0,100))
+                pList.append(programacion1)
+                fisica = validar_input("Ingrese su calificación de Física biomédica (0 - 100): ", tipo= "rango", rango = (0,100))
+                fList.append(fisica)
+                quimica = validar_input("Ingrese su calificación de Química general y orgánica (0 - 100): ", tipo= "rango", rango = (0,100))
+                qList.append(quimica)
+                cienciasbio = validar_input("Ingrese su calificación de Ciencias Biologicas (0 - 100): ", tipo= "rango", rango = (0,100))
+                cList.append(cienciasbio)
+                while True:
+                    try:
+                        asistencias = validar_input ("Ingrese asistecias: ", tipo= "numerico")
+                        inasistencias = validar_input ("Ingrese inasistencias: ", tipo= "numerico")
+                        if asistencias+inasistencias == 40:
+                            asisList.append(asistencias)
+                            absList.append(inasistencias)
+                            if inasistencias >6:
+                                print ("No tienes derecho a ordinario.")
+                                break
+                            else:
+                                break
+                        else:
+                            print("Registre asistencias para 40 días de clase")
+                    except ValueError:
+                        print("Por favor ingrese valores numéricos válidos.")
 
         #Identificar 2
             elif opcion == 2:
