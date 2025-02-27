@@ -207,17 +207,22 @@ while True:
                     absList[mod]=int(input("Ingrese nuevas faltas: "))
                 elif ident in surList:
                     mod=surList.index(ident)
-                    nameList[mod]=input(str("Ingrese nuevo nombre: ").upper()) #Lo mismo, pero busca la posición en la lista de apellidos, es decir, si becerra esta en la posición 0, se van a modificar la posición 0 de todas las listas
-                    surList[mod]=input(str("Ingrese nuevo apellido: ").upper())
-                    codeList[mod]=input(str("Ingrese nuevo código: "))
-                    ageList[mod]=input(int("Ingrese su nueva edad: "))
-                    carList[mod]=input(str("Ingrese su nueva carrera: ").upper())
-                    pList[mod]=float(input("Ingrese nueva calificación de Programación 1 (0 - 100): "))
-                    fList[mod]=float(input("Ingrese nueva calificación de Física (0 - 100): "))
-                    qList[mod]=float(input("Ingrese nueva calificación de Química (0 - 100): "))
-                    cList[mod]=float(input("Ingrese nueva calificación de Biología (0 - 100): "))
-                    asisList[mod]=int(input("Ingrese nuevas asistencias: "))
-                    absList[mod]=int(input("Ingrese nuevas faltas: "))
+                    print("Modificando información del estudiante:", nameList[mod], surList[mod])
+                    nombre = validar_input("Ingrese su nombre: ", tipo="alfabetico")
+                    nameList[mod] = nombre #Lo que hace esto es que va a guardar todo en la posición que sigue, esa es la función de .append
+                    apellido = validar_input("Ingrese su apellido: ", tipo="alfabetico")
+                    surList[mod] = apellido 
+                    codigo = validar_input("Ingresa el nuevo código: ", tipo="numerostr")
+                    codeList [mod] = codigo
+                    edad = validar_input("Ingrese su edad: ", tipo= "numerico")
+                    ageList[mod] = edad
+                    while True:
+                        carrera = validar_input("Ingrese su carrera (LC, LCD, LIACD, LIFN, LTB): ", tipo= "alfabetico")
+                        if carrera in Listade:
+                            carList[mod] = carrera
+                            break
+                        else:
+                                print ("Elija una carrera valida")
                 elif ident in codeList:
                     mod=codeList.index(ident)
                     nameList[mod]=input(str("Ingrese nuevo nombre: ").upper()) #Lo mismo, pero en el código
