@@ -263,8 +263,8 @@ while True:
 
         #Lista de estudiantes 5
             elif opcion == 5:
-                nombre_completo = [f"{nombre} {apellido}" for nombre, apellido in zip(nameList, surList)] #nombre_completo es una lista anidada que muestra en paralelo.
-                print(nombre_completo)
+                for nombre, apellido, codigo in zip(nameList, surList, codeList):
+                    print(f"Nombre: {nombre} {apellido}, Código: {codigo}")
                 
         #Almacenar calificaciones 6
             elif opcion == 6:
