@@ -11,7 +11,39 @@ asisList = [15, 36, 40, 33, 19, 5, 10, 34, 18, 20, 23, 26, 38, 39] #Asistencia
 absList = [25, 4, 0, 7, 21, 35, 30, 6, 22, 20, 17, 14, 2, 1] #Faltas
 ageList = [19, 20, 22, 18, 18, 18, 19, 18, 24, 18, 21, 19, 22, 18] #Edad
 carList = ["LTBI", "LTBI", "LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI",] #Carrera
-
+Listade = ["LC", "LCD", "LIACD", "LIFN", "LTB"]
+    
+#Definiendo función para checar
+def validar_input(mensaje, tipo="alfabetico", rango=None):
+    while True:
+        valor = input(mensaje).upper() if tipo == "alfabetico" else input(mensaje)
+        if tipo == "alfabetico":
+            if valor.isalpha():
+                return valor
+            else:
+                print("La entrada debe contener solo letras.")
+        elif tipo == "numerico":
+            try:
+                valor = int(valor)
+                return valor
+            except ValueError:
+                print("La entrada debe ser un número.")
+        elif tipo == "numerostr":
+            if valor.isnumeric():
+                return valor
+            else:
+                print("La entrada debe contener solo números.")
+        elif tipo == "rango":
+            try:
+                valor = float(valor)
+                if rango[0] <= valor <= rango[1]:
+                    return valor
+                else:
+                    print(f"La entrada debe estar entre {rango[0]} y {rango[1]}.")
+            except ValueError:  
+                print("Por favor, ingrese un número válido.")
+        else:
+            print("Tipo de validación no soportado.")
 #Variables para cuando agregamos calificaciones o borramos a alguien
 borrar = str
 caP = float
