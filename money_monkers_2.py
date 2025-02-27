@@ -11,6 +11,7 @@ asisList = [15, 36, 40, 33, 19, 5, 10, 34, 18, 20, 23, 26, 38, 39] #Asistencia
 absList = [25, 4, 0, 7, 21, 35, 30, 6, 22, 20, 17, 14, 2, 1] #Faltas
 ageList = [19, 20, 22, 18, 18, 18, 19, 18, 24, 18, 21, 19, 22, 18] #Edad
 carList = ["LTBI", "LTBI", "LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI",] #Carrera
+
 Listade = ["LC", "LCD", "LIACD", "LIFN", "LTB"]
     
 #Definiendo función para checar
@@ -117,30 +118,35 @@ while True:
         #Identificar 2
             elif opcion == 2:
                 ident = input("Ingresa el identificador: ").upper() #ident es la variable que es un identificador, puede ser nombre, apellido, codigo.
+                
                 if ident in nameList: # Si esta en el nombre
                      print("Su nombre es:", nameList[nameList.index(ident)]) #nameList[nameList.index(ident)] Hace que en la lista de nombres se imprima el de la posición del nombre o código que se pone
                      print("Su apellido es:", surList[nameList.index(ident)]) #ident es la variable que se utiliza para saber la posición en la que está el input. Osea, allison es la posición 1
                      print("Su código es:", codeList[nameList.index(ident)]) # entonces se va a imprimir todo lo de las bases de datos de la posición 1
                      print("Su edad es:", ageList[nameList.index(ident)])
                      print("Su carrera es:", carList[nameList.index(ident)])
+                    
                 elif ident in surList:
                      print("Su nombre es:", nameList[surList.index(ident)])
                      print("Su apellido es:", surList[surList.index(ident)])
                      print("Su código es:", codeList[surList.index(ident)])
                      print("Su edad es:", ageList[surList.index(ident)])
                      print("Su carrera es:", carList[surList.index(ident)])
+                    
                 elif ident in codeList:
                      print("Su nombre es:", nameList[codeList.index(ident)])
                      print("Su apellido es:", surList[codeList.index(ident)])
                      print("Su código es:", codeList[codeList.index(ident)])
                      print("Su edad es:", ageList[codeList.index(ident)])
                      print("Su carrera es:", carList[codeList.index(ident)])
+                    
                 else:
                     print("El estudiante no se encuentra en la lista")
 
         #Eliminar 3
             elif opcion == 3:
                 ident = input("Ingresa el identificador: ").upper()
+                
                 if ident in nameList: #Si el input esta en la lista de nombres, entonces arrancar el programa
                     print("El estudiante:", nameList[nameList.index(ident)], surList[nameList.index(ident)], "ha sido borrado")
                     borrar = nameList.index(ident) #Esta variable se iguala al de la posición de la lista en la que ident se encuentra, es decir. Si ident encuentra a Emiliano en la posición 0, borrar sera igual a 0 y por ende borrara todos los valores de toda la lista en la posición 0
@@ -213,7 +219,6 @@ while True:
                         else:
                             print ("Elija una carrera valida")
 
-
                 elif ident in surList:
                     mod=surList.index(ident)
                     print("Modificando información del estudiante:", nameList[mod], surList[mod])
@@ -232,20 +237,28 @@ while True:
                             break
                         else:
                                 print ("Elija una carrera valida")
+                                
                 elif ident in codeList:
                     mod=codeList.index(ident)
-                    nameList[mod]=input(str("Ingrese nuevo nombre: ").upper()) #Lo mismo, pero en el código
-                    surList[mod]=input(str("Ingrese nuevo apellido: ").upper())
-                    codeList[mod]=input(str("Ingrese nuevo código: "))
-                    ageList[mod]=input(int("Ingrese su nueva edad: "))
-                    carList[mod]=input(str("Ingrese su nueva carrera: ").upper())
-                    pList[mod]=float(input("Ingrese nueva calificación de Programación 1 (0 - 100): "))
-                    fList[mod]=float(input("Ingrese nueva calificación de Física (0 - 100): "))
-                    qList[mod]=float(input("Ingrese nueva calificación de Química (0 - 100): "))
-                    cList[mod]=float(input("Ingrese nueva calificación de Biología (0 - 100): "))
-                    asisList[mod]=int(input("Ingrese nuevas asistencias: "))
-                    absList[mod]=int(input("Ingrese nuevas faltas: "))
-                else:
+                    print("Modificando información del estudiante:", nameList[mod], surList[mod])
+                    nombre = validar_input("Ingrese su nombre: ", tipo="alfabetico")
+                    nameList[mod] = nombre #Lo que hace esto es que va a guardar todo en la posición que sigue, esa es la función de .append
+                    apellido = validar_input("Ingrese su apellido: ", tipo="alfabetico")
+                    surList[mod] = apellido 
+                    codigo = validar_input("Ingresa el nuevo código: ", tipo="numerostr")
+                    codeList [mod] = codigo
+                    edad = validar_input("Ingrese su edad: ", tipo= "numerico")
+                    ageList[mod] = edad
+                    
+                    while True:
+                        carrera = validar_input("Ingrese su carrera (LC, LCD, LIACD, LIFN, LTB): ", tipo= "alfabetico")
+                        if carrera in Listade:
+                            carList[mod] = carrera
+                            break
+                        else:
+                            print ("Elija una carrera valida")
+
+                else: #Ya si deplano no, no se encuentra en la lista
                     print("El estudiante no se encuentra en la lista")
 
         #Lista de estudiantes 5
