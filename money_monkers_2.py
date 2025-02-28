@@ -268,28 +268,44 @@ while True:
                 
         #Almacenar calificaciones 6
             elif opcion == 6:
-                ident = input("Ingresa el identificador: ").upper()
+                ident = input("Ingrese el identificador: ").upper()
+
                 if ident in nameList:
                     mod=nameList.index(ident) #Es una variable que se va a igualar a la posición en la que ident encuentre a su simil. Es decir, el usuario pone Emiliano, Emiliano en la lista esta en la posición 0. Mod se va a igualar a 0
                     print("Almacenando calificaciones del estudiante:", nameList[nameList.index(ident)], surList[nameList.index(ident)])
-                    pList[mod]=float(input("Ingrese nueva calificación de Programación 1 (0 - 100): ")) #Va a almacenar las calificación en la posición en la que ident encuentre en la base de datos, es decir, va a modificar todas las posiciones 0 si ident esta en la posición 0
-                    fList[mod]=float(input("Ingrese nueva calificación de Física (0 - 100): "))
-                    qList[mod]=float(input("Ingrese nueva calificación de Química (0 - 100): "))
-                    cList[mod]=float(input("Ingrese nueva calificación de Biología (0 - 100): "))
+                    programacion1 = validar_input("Ingrese su calificación de Programación 1 (0 - 100): ", tipo= "rango", rango = (0,100))
+                    pList[mod] = programacion1
+                    fisica = validar_input("Ingrese su calificación de Física biomédica (0 - 100): ", tipo= "rango", rango = (0,100))
+                    fList[mod] = fisica
+                    quimica = validar_input("Ingrese su calificación de Química general y orgánica (0 - 100): ", tipo= "rango", rango = (0,100))
+                    qList[mod] = quimica
+                    cienciasbio = validar_input("Ingrese su calificación de Ciencias Biologicas (0 - 100): ", tipo= "rango", rango = (0,100))
+                    cList[mod] = cienciasbio
+                    
                 elif ident in surList:
                     mod=surList.index(ident)
                     print("Almacenando calificaciones del estudiante:", nameList[surList.index(ident)], surList[surList.index(ident)])
-                    pList[mod]=float(input("Ingrese nueva calificación de Programación 1 (0 - 100): "))
-                    fList[mod]=float(input("Ingrese nueva calificación de Física (0 - 100): "))
-                    qList[mod]=float(input("Ingrese nueva calificación de Química (0 - 100): "))
-                    cList[mod]=float(input("Ingrese nueva calificación de Biología (0 - 100): "))
+                    programacion1 = validar_input("Ingrese su calificación de Programación 1 (0 - 100): ", tipo= "rango", rango = (0,100))
+                    pList[mod] = programacion1
+                    fisica = validar_input("Ingrese su calificación de Física biomédica (0 - 100): ", tipo= "rango", rango = (0,100))
+                    fList[mod] = fisica
+                    quimica = validar_input("Ingrese su calificación de Química general y orgánica (0 - 100): ", tipo= "rango", rango = (0,100))
+                    qList[mod] = quimica
+                    cienciasbio = validar_input("Ingrese su calificación de Ciencias Biologicas (0 - 100): ", tipo= "rango", rango = (0,100))
+                    cList[mod] = cienciasbio
+                    
                 elif ident in codeList:
                     mod=codeList.index(ident)
                     print("Almacenando calificaciones del estudiante:", nameList[codeList.index(ident)], surList[codeList.index(ident)])
-                    pList[mod]=float(input("Ingrese nueva calificación de Programación 1 (0 - 100): "))
-                    fList[mod]=float(input("Ingrese nueva calificación de Física (0 - 100): "))
-                    qList[mod]=float(input("Ingrese nueva calificación de Química (0 - 100): "))
-                    cList[mod]=float(input("Ingrese nueva calificación de Biología (0 - 100): "))
+                    programacion1 = validar_input("Ingrese su calificación de Programación 1 (0 - 100): ", tipo= "rango", rango = (0,100))
+                    pList[mod] = programacion1
+                    fisica = validar_input("Ingrese su calificación de Física biomédica (0 - 100): ", tipo= "rango", rango = (0,100))
+                    fList[mod] = fisica
+                    quimica = validar_input("Ingrese su calificación de Química general y orgánica (0 - 100): ", tipo= "rango", rango = (0,100))
+                    qList[mod] = quimica
+                    cienciasbio = validar_input("Ingrese su calificación de Ciencias Biologicas (0 - 100): ", tipo= "rango", rango = (0,100))
+                    cList[mod] = cienciasbio
+                    
                 else:
                     print("El estudiante no se encuentra en la lista")
                     
