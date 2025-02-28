@@ -105,9 +105,7 @@ while True:
                         if asistencias+inasistencias == 40:
                             asisList.append(asistencias)
                             absList.append(inasistencias)
-                            if inasistencias >6:
-                                print ("No tienes derecho a ordinario.")
-                                break
+                        
                             else:
                                 break
                         else:
