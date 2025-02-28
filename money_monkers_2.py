@@ -364,7 +364,7 @@ while True:
                     print("El estudiante no se encuentra en la lista")
 
         # Asistencia 9
-           elif opcion == 9:
+          elif opcion == 9:
                 ident = input("Ingresa el identificador: ").upper()
                 if ident in nameList:
                     asis = nameList.index(ident)
