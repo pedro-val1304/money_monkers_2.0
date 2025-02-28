@@ -18,7 +18,7 @@ En este repositorio mejoraremos el código inicial, buscando mejorar el reporte 
 - **Emiliano Becerra López** → Consultor, líder de estandarización de datos.
 - **Pedro Daniel Gutiérrez Pérez** → Consultor, líder de poner límites a datos.
 - **Natalia Vanessa Rodríguez Cervantes** → Líder en el grupo de diagrama.
-- **Luna Silva Valeria Carolina** → 
+- **Luna Silva Valeria Carolina** → Aprendiz en código.
 - **Torres Bermúdez Ángel Antonio** →
 - **Martin Gallardo Edna Naomi** →
 - **Torres Rodrigues Samanta Julieth** → Aprendiz y asistente de programación.
