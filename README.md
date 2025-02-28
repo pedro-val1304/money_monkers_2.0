@@ -19,10 +19,11 @@ En este repositorio mejoraremos el código inicial, buscando mejorar el reporte 
 - **Pedro Daniel Gutiérrez Pérez** → Consultor, líder de poner límites a datos.
 - **Natalia Vanessa Rodríguez Cervantes** → Líder en el grupo de diagrama.
 - **Luna Silva Valeria Carolina** → Aprendiz en código.
-- **Torres Bermúdez Ángel Antonio** →
-- **Martin Gallardo Edna Naomi** →
+- **Torres Bermúdez Ángel Antonio** → Aprendiz y practicante 
+- **Martin Gallardo Edna Naomi** → Aprendiz
 - **Torres Rodrigues Samanta Julieth** → Aprendiz y asistente de programación.
 - **Correa Rodrigues Erika Janeth** → Aprendiz y asistente en programación. 
 - **Ávila Núñez Jacob** → Aprendiz, tanto en código como apoyo en diagrama (pero también aprendiendo)
 - **Gil Martínez Carlos Alberto** →
 - **Martínez Castro Quehat Merari Uziel** → Aprendiz
+- **Aguilera Galan Reyna Esmeralda** → Aprendiz
