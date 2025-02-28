@@ -21,7 +21,7 @@ En este repositorio mejoraremos el código inicial, buscando mejorar el reporte 
 - **Luna Silva Valeria Carolina** → 
 - **Torres Bermúdez Ángel Antonio** →
 - **Martin Gallardo Edna Naomi** →
-- **Torres Rodrigues Samanta Julieth** →
+- **Torres Rodrigues Samanta Julieth** → Aprendiz y asistente de programación.
 - **Correa Rodrigues Erika Janeth** → Aprendiz y asistente en programación. 
 - **Ávila Núñez Jacob** → Aprendiz, tanto en código como apoyo en diagrama (pero también aprendiendo)
 - **Gil Martínez Carlos Alberto** →
