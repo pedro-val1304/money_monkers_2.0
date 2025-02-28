@@ -22,7 +22,7 @@ En este repositorio mejoraremos el código inicial, buscando mejorar el reporte 
 - **Torres Bermúdez Ángel Antonio** →
 - **Martin Gallardo Edna Naomi** →
 - **Torres Rodrigues Samanta Julieth** →
-- **Correa Rodrigues Erika Janeth** →
+- **Correa Rodrigues Erika Janeth** → Aprendiz y asistente en programación. 
 - **Ávila Núñez Jacob** → Aprendiz, tanto en código como apoyo en diagrama (pero también aprendiendo)
 - **Gil Martínez Carlos Alberto** →
 - **Martínez Castro Quehat Merari Uziel** → Aprendiz
