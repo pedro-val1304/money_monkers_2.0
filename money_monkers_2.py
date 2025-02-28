@@ -364,41 +364,56 @@ while True:
                     print("El estudiante no se encuentra en la lista")
 
         # Asistencia 9
-            elif opcion == 9:
-                ident = input("Ingresa el identificador: ").upper()
+           elif opcion == 9:
+                ident = input("Ingrese el identificador: ").upper()
+
                 if ident in nameList:
                     asis = nameList.index(ident)
-                    print("Almacenando asistencias del estudiante:", nameList[nameList.index(ident)], surList[nameList.index(ident)])
-                    asistencias = int(input("Ingrese nuevas asistencias: "))
-                    inasistencias = int(input("Ingrese nuevas faltas: "))
-                    if asistencias+inasistencias <= 40:
-                        asisList[asis] = asistencias
-                        absList[asis] = inasistencias
-                    else:
-                        print("El límite de asistencias es 40 y el de inasistencias es 6.")
+                    while True:
+                        try:
+                            asistencias = validar_input ("Ingrese asistecias: ", tipo= "numerico")
+                            inasistencias = validar_input ("Ingrese inasistencias: ", tipo= "numerico")
+                            if asistencias+inasistencias == 40:
+                                asisList[asis] = asistencias
+                                absList[asis] = inasistencias
+                                break
+                            else:
+                                print("Registre asistencias para 40 días de clase")
+                        except ValueError:
+                            print("Por favor ingrese valores numéricos válidos.")
+
                 elif ident in surList:
                     asis = surList.index(ident)
-                    print("Almacenando asistencias del estudiante:", nameList[surList.index(ident)], surList[surList.index(ident)])
-                    asistencias = int(input("Ingrese nuevas asistencias: "))
-                    inasistencias = int(input("Ingrese nuevas faltas: "))
-                    if asistencias+inasistencias <= 40:
-                        asisList[asis] = asistencias
-                        absList[asis] = inasistencias
-                    else:
-                        print("El límite de asistencias es 40 y el de inasistencias es 6.")
+                    while True:
+                        try:
+                            asistencias = validar_input ("Ingrese asistecias: ", tipo= "numerico")
+                            inasistencias = validar_input ("Ingrese inasistencias: ", tipo= "numerico")
+                            if asistencias+inasistencias == 40:
+                                asisList[asis] = asistencias
+                                absList[asis] = inasistencias
+                                break
+                            else:
+                                print("Registre asistencias para 40 días de clase")
+                        except ValueError:
+                            print("Por favor ingrese valores numéricos válidos.")
+
                 elif ident in codeList:
                     asis = codeList.index(ident)
-                    print("Almacenando asistencias del estudiante:", nameList[codeList.index(ident)], surList[codeList.index(ident)])
-                    asistencias = int(input("Ingrese nuevas asistencias: "))
-                    inasistencias = int(input("Ingrese nuevas faltas: "))
-                    if asistencias+inasistencias <= 40:
-                        asisList[asis] = asistencias
-                        absList[asis] = inasistencias
-                    else:
-                        print("El límite de asistencias es 40 y el de inasistencias es 6.")
+                    while True:
+                        try:
+                            asistencias = validar_input ("Ingrese asistecias: ", tipo= "numerico")
+                            inasistencias = validar_input ("Ingrese inasistencias: ", tipo= "numerico")
+                            if asistencias+inasistencias == 40:
+                                asisList[asis] = asistencias
+                                absList[asis] = inasistencias
+                                break
+                            else:
+                                print("Registre asistencias para 40 días de clase")
+                        except ValueError:
+                            print("Por favor ingrese valores numéricos válidos.")
+
                 else:
                     print("El estudiante no se encuentra en la lista")
-
         #Reporte de Asistencia 10
             elif opcion == 10: #Funciona igual que las calificaciones 
                 ident = input("Ingresa el identificador: ").upper()
