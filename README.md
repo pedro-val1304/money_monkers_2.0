@@ -24,6 +24,6 @@ En este repositorio mejoraremos el código inicial, buscando mejorar el reporte 
 - **Torres Rodrigues Samanta Julieth** → Aprendiz y asistente de programación.
 - **Correa Rodrigues Erika Janeth** → Aprendiz y asistente en programación. 
 - **Ávila Núñez Jacob** → Aprendiz, tanto en código como apoyo en diagrama (pero también aprendiendo)
-- **Gil Martínez Carlos Alberto** →
+- **Gil Martínez Carlos Alberto** → Aprendiz
 - **Martínez Castro Quehat Merari Uziel** → Aprendiz
 - **Aguilera Galan Reyna Esmeralda** → Aprendiz
