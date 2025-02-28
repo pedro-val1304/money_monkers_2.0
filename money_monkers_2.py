@@ -1,4 +1,5 @@
 
+
 #Estas son las listas.
 nameList = ["EMILIANO", "ALLISON", "NAOMI", "NATALIA", "PEDRO", "JOSE", "DIEGO", "ABRIL", "GRECIA", "MISAEL", "ALBERTO", "ELIAS", "ANGEL", "GLORIA"]
 surList = ["BECERRA", "FACIO", "JIMENEZ", "RODRIGUEZ", "GUTIERREZ", "VALENZUELA", "VIDRIO", "MORA", "VALDIVIA", "IBARRA", "ORNELAS", "ZEPEDA", "GRANADOS", "ALVAREZ"]
@@ -106,9 +107,8 @@ while True:
                             asisList.append(asistencias)
                             absList.append(inasistencias)
                         
-                            else:
-                                break
                         else:
+                            break
                             print("Registre asistencias para 40 días de clase")
                     except ValueError:
                         print("Por favor ingrese valores numéricos válidos.")
